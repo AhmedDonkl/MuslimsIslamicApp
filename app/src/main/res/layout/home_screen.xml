@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen">
+    
+    <!-- you can set layout accordingly -->
+    
+    
+<!--     <TextView -->
+<!--         android:layout_below="@+id/home_lunch" -->
+<!--         android:id="@+id/txtLabel" -->
+<!--          android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerInParent="true" -->
+<!--         android:padding="10dip" -->
+<!--         android:textColor="@color/list_background_pressed" -->
+<!--         android:textSize="17sp" -->
+<!--         android:text=""/> -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/home_lunch" -->
+<!--         android:padding="10dip" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:layout_centerHorizontal="true" -->
+        
+<!--         android:src="@drawable/nasdaq_logo" /> -->
+
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

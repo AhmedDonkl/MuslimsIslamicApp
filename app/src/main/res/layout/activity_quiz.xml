@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_s"
+    android:orientation="vertical" >
+
+<!--     <include -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="50dp" -->
+<!--         layout="@layout/layout_header" /> -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+         android:layout_height="416dp"
+        android:layout_weight="0.55" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageview_arabic_word"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/textView_result_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_meaning_option_one"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ques_btns_selector"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:padding="2dp"/>
+
+            <Button
+                android:id="@+id/btn_meaning_option_two"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ques_btns_selector"
+                android:textColor="#ffffff" 
+                android:singleLine="true"
+                android:padding="2dp"/>
+
+            <Button
+                android:id="@+id/btn_meaning_option_three"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ques_btns_selector"
+                android:textColor="#ffffff" 
+                android:singleLine="true"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/textView_knowledge_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+    
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>

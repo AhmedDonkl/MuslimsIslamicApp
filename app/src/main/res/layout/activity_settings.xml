@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/homescreen_s" >
+    
+<!--     <include layout="@layout/layout_header" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="50dp" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:orientation="vertical"
+        android:layout_weight="0.55"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_set_location"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/set_location" 
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ques_btns_selector"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_date_conversion"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ques_btns_selector"
+            android:text="@string/date_conversion"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_set_time"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/timing_settings" 
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ques_btns_selector"
+             android:textColor="#e6cb7e"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_others"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/other" 
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ques_btns_selector"
+             android:textColor="#e6cb7e"
+            android:textStyle="bold"/>
+
+      
+        
+        
+    </LinearLayout>
+	
+    
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>

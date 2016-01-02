@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_s"
+    android:orientation="vertical" >
+
+<!--     <include -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="50dp" -->
+<!--         layout="@layout/layout_header" /> -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:layout_weight="0.55"
+       
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_fajar_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/textView_fajar_namz_time"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/timing_item_bg_nine"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#e6cb7e"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_fajar_timer"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_timer_selector" />
+
+                    <TextView
+                        android:id="@+id/textView_fajar_namz_name"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/row_item_name_bg_nine"
+                        android:gravity="right|center_vertical"
+                        android:text="Fajar Prayer"
+                        android:textColor="#e6cb7e"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_shrouk_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/textView_shrouk_namz_time"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/timing_item_bg_nine"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#e6cb7e"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_shrouk_timer"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_timer_selector" />
+
+                    <TextView
+                        android:id="@+id/textView_shrouk_namz_name"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/row_item_name_bg_nine"
+                        android:gravity="right|center_vertical"
+                        android:text="Shorouk Prayer"
+                        android:textColor="#e6cb7e"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_zohr_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/textView_zohr_namz_time"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/timing_item_bg_nine"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#e6cb7e"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_zohr_timer"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_timer_selector" />
+
+                    <TextView
+                        android:id="@+id/textView_zohr_namz_name"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/row_item_name_bg_nine"
+                        android:gravity="right|center_vertical"
+                        android:text="Zohar Prayer"
+                        android:textColor="#e6cb7e"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_asr_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/textView_asr_namz_time"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/timing_item_bg_nine"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#e6cb7e"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_asr_timer"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_timer_selector" />
+
+                    <TextView
+                        android:id="@+id/textView_asr_namz_name"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/row_item_name_bg_nine"
+                        android:gravity="right|center_vertical"
+                        android:text="Asr Prayer"
+                        android:textColor="#e6cb7e"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_maghrib_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/textView_maghrib_namz_time"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/timing_item_bg_nine"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#e6cb7e"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_maghrib_timer"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_timer_selector" />
+
+                    <TextView
+                        android:id="@+id/textView_maghrib_namz_name"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/row_item_name_bg_nine"
+                        android:gravity="right|center_vertical"
+                        android:text="Maghrib Prayer"
+                        android:textColor="#e6cb7e"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_isha_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/textView_isha_namz_time"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/timing_item_bg_nine"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#e6cb7e"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_isha_timer"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_timer_selector" />
+
+                    <TextView
+                        android:id="@+id/textView_isha_namz_name"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/row_item_name_bg_nine"
+                        android:gravity="right|center_vertical"
+                        android:text="Isha Prayer"
+                        android:textColor="#e6cb7e"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                
+                
+               
+            </LinearLayout>
+
+        </ScrollView>
+
+        <SlidingDrawer
+            android:id="@+id/slidingDrawer1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="horizontal"
+            android:layout_gravity="center" >
+
+            <ImageButton
+                android:id="@+id/handle"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/handle_icon"/>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#312E1B"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="select the Asr Prayer calcualtion method"
+                    android:textColor="#dddddd"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/white_shape_rounded_crner"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_shafii"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.75"
+                            android:text="Shafi jurisprudence "
+                            android:textColor="#e6cb7e"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageview_check_shafii"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/check_black"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#666666" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_hanfi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.75"
+                            android:text="@string/hanafi"
+                            android:textColor="#e6cb7e"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageview_check_hanfi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/check_black"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </SlidingDrawer>
+        
+        
+         
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+</LinearLayout>

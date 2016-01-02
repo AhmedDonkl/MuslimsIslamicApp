@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.bluehorntech.muslimsislamicapp"
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'joda-time:joda-time:2.2'
+    compile 'com.google.android.gms:play-services:+'
+    compile files('libs/libGoogleAnalyticsServices.jar')
+}

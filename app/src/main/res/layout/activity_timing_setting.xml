@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_s"
+    android:orientation="vertical" >
+
+<!--     <include -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="50dp" -->
+<!--         layout="@layout/layout_header" /> -->
+
+    <ScrollView
+        android:id="@+id/scrollViewSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:layout_weight="0.55"
+        android:layout_above="@+id/footer_layout"
+        android:layout_below="@+id/checkin_activity_header_lay" >
+
+        <LinearLayout
+            android:id="@+id/scrollViewLinLay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/select_calculation_method"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#1b1a15"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_itna_ash"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/ithna_ashari"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_itna_ash"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_karchi_univ"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/univ_islamic"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_karah_univ"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_islamic_soc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/islamic_society_of"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_islamic_soc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_musl_world"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/muslim_world_le"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_musl_world"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_umm_al"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/umm_al_qura"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_umm_al"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_egypt_authr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/egyptian_general_a"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_egypt_authr"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_univ_tehran"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/university_of_tehran"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_univ_of_terhan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/select_the_aser_calcualtion_method"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#1b1a15"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_shafii"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/shafii"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_shafii"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_hanfi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/hanafi"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_hanfi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/adjustment_of_high_latitudes"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#1b1a15"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_no_adju"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/no_adjustment"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_no_adju"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_middle_of_night"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/middle_of_night"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_middle_of_night"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_7th_night"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/th7_of_night"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_7th_night"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/select_time_formate"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#1b1a15"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_24_hour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/f24_formate"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_24_hour"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#666666" />
+
+                <LinearLayout
+                    android:id="@+id/layout_12_hour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="#1b1a15"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:text="@string/f12_formate"
+                        android:textColor="#e6cb7e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview_check_12_hour"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/check_white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save_timing_setting"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ques_btns_selector"
+                android:text="@string/save_setting"
+                android:textColor="#e6cb7e"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

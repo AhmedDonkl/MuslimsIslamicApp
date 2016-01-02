@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Muslims Islamic App</string>
+    
+    <!-- Menu Strings -->
+    <string name="action_settings">Settings</string>
+    <string name="action_rateapp">Rate App</string>
+    <string name="action_refresh">Refresh</string>
+    
+    <string name="hello_world">Hello world!</string>
+	<string name="banner_id">ca-app-pub-1359100456648828/4395200398</string>
+    
+    
+      <!-- Navigation Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Learning Quran</item>
+        <item >Prayer Timings</item>
+        <item >Islamic Events</item>
+        <item >Nearby Mosques</item>
+        <item >Qibla Direction</item>
+        <item >Settings</item>
+        <item >About</item>
+        <item >Donations</item>
+        
+    </string-array>
+    
+    <!-- List Item Icons(Images) with strings(text of company name) -->
+    <!-- Keep them with titles array accordingly -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/home_icon</item>
+        <item>@drawable/learning_quran</item>
+        <item>@drawable/prayer_timings</item>
+        <item>@drawable/eventsbg_white</item>
+        <item>@drawable/mosque_icon</item>
+        <item>@drawable/qiblabg_white</item>
+        <item>@drawable/settingsbg_white</item>
+        <item>@drawable/aboutbg_white</item>
+        <item>@drawable/home_icon</item>
+    </array>
+    
+
+	<!-- drawer_list_item Imageview Description  -->
+    <string name="description_list_icon">Item Icon</string>
+    
+    
+      <string name="google_api_key">AIzaSyCnph3_wogQSbD6f7UYb5REnFx1E1vw5gw</string>
+	<string name="change_lang">Change Language</string>
+	<string name="change_lang_eng">Change Language to English</string>
+	<string name="change_lang_fr">Change Language to French</string>
+	<string name="change_lang_ar">Change Language to Arabic</string>
+    
+    <string name="more">More</string>
+    
+    <string name="menu_settings">Settings</string>
+    <string name="learnquran">Learn Qur\'an</string>
+	<string name="timing">Timings</string>
+	<string name="save">Save</string>
+	<string name="events">Events</string>
+	<string name="mosque">Mosque</string>
+	<string name="settings">Settings</string>
+	<string name="about">About</string>
+	<string name="quranic">Quran Section</string>
+	<string name="parayertimings">Prayer Timings</string>
+	<string name="islamicevents">Islamic Events</string>
+	<string name="mosquenew">Nearby Mosques</string>
+	<string name="learn_words">Learn Words</string>
+	<string name="quran_quiz">Quran Quiz</string>
+	<string name="back">Back</string>
+	<string name="translate">Translate</string>
+	<string name="total_result">Total Results</string>
+	<string name="finish">Finish</string>
+	<string name="fajar">AL-FAJAR</string>
+	<string name="shrouk">SHROUK</string>
+	<string name="zohar">ZOHR</string>
+	<string name="asr">ASR</string>
+	<string name="magrib">MAGRIB</string>
+	<string name="isha">ISHA</string>
+	<string name="set_location">Set Your Location</string>
+	<string name="date_conversion">Date Conversion</string>
+	<string name="timing_settings">Timing Settings</string>
+	<string name="other">Others</string>
+	<string name="select_calculation_method">Select Calculation Method</string>
+	<string name="univ_islamic">University of Islamic Sciences, Karachi</string>
+	<string name="ithna_ashari">Ithna Ashari</string>
+	<string name="islamic_society_of">Islamic Society of North America (ISNA)</string>
+	<string name="muslim_world_le">Muslim World League (MWL)</string>
+	<string name="umm_al_qura">Umm al-Qura, Makkah</string>
+	<string name="egyptian_general_a">Egyptian General Authority of Survey</string>
+	<string name="university_of_tehran">University of Tehran</string>
+	<string name="select_the_aser_calcualtion_method">Select Aser Calculation Method</string>
+	<string name="shafii">Shafii Jurisdiction</string>
+	<string name="hanafi">Hanfi Jurisdiction</string>
+	<string name="adjustment_of_high_latitudes">Adjustment of High latitudes</string>
+	<string name="no_adjustment">No Adjustment</string>
+	<string name="middle_of_night">Middle of Night</string>
+	<string name="th7_of_night">1/7th of Night</string>
+	<string name="select_time_formate">Select Time Formate</string>
+	<string name="f24_formate">24 - Hour Time Formate</string>
+	<string name="f12_formate">12 - Hour Time Formate</string>
+	<string name="save_setting">Save Settings</string>
+	<string name="hijri_date">Hijri Date</string>
+	<string name="year">Year</string>
+	<string name="alarm_before">Alarm Before</string>
+	<string name="dua_after_azan">Dua After Azaan</string>
+	<string name="month">Month</string>
+	<string name="day">Day</string>
+	<string name="gregorian_date">Gregorian Date</string>
+	<string name="hijri_to_gregorian">Hijri to Gregorian</string>
+	<string name="gregoria_to_hijri">Gregorian to Hijri</string>
+	<string name="qibla_direction">Qibla Direction</string>
+	<string-array name="events_names_array">
+	    <item>1st Muharram </item>
+	    <item>10th Muharram</item>
+	    <item>12th Rabi-ul-Awal</item>
+	    <item>27th Rajab</item>
+	    <item>15th Sha\'baan</item>
+	    <item>1st Ramadan</item>
+	    <item>27th Ramadan</item>
+	    <item>1st Shawaal</item>
+	    <item>10th Zul-Hijjah</item>
+	    <item>1st Muharram</item>
+	    <item>10th Muharram</item>
+	    <item>12th Rabi-ul-Awal</item>
+	    <item>27th Rajab</item>
+	    <item>15th Sha\'baan</item>
+	    <item>1st Ramadan</item>
+	    <item>27th Ramadan</item>
+	    <item>1st Shawaal</item>
+	    <item>10th Zul-Hijjah</item>
+	</string-array>
+	<string-array name="months_name_array">
+	    <item>January</item>
+		<item>February</item>
+		<item>March</item>
+		<item>April</item>
+		<item>May</item>
+		<item>June</item>
+		<item>July</item>
+		<item>August</item>
+		<item>September</item>
+		<item>October</item>
+		<item>November</item>
+		<item>December</item>
+	</string-array>
+	<string-array name="months_islamic_name_array">
+	    <item>MUHARRAM</item>
+		<item>Safar</item>
+		<item>RABI-AL-AWWAL</item>
+		<item>RABI-AL-THANI</item>
+		<item>JUMADA-AL-AWWAL</item>
+		<item>JUMADA-AL-THANI</item>
+		<item>RAJAB</item>
+		<item>SHABAN</item>
+		<item>RAMADAN</item>
+		<item>SHAWWAL</item>
+		<item>ZUL-QAADAH</item>
+		<item>ZUL-HIJJAH</item>
+	</string-array>
+    
+    
+</resources>

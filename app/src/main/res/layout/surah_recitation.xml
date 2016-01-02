@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_s" >
+
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_surah_fatiha"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24dp"
+        android:text="Holy Quran Recitation"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#e6cb7e" />
+
+    <Button
+        android:id="@+id/btn_surah_fatiha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ques_btns_selector"
+        android:text="Surah Al-Fatiha"
+        android:textColor="#e6cb7e"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_surah_rahman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_surah_fatiha"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ques_btns_selector"
+        android:text="Surah Ar-Rahman "
+        android:textColor="#e6cb7e"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_surah_mulk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_surah_rahman"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ques_btns_selector"
+        android:text="Surah Al-Mulk"
+        android:layout_marginTop="15dp"
+        android:textColor="#e6cb7e"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_surah_waqia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_surah_mulk"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ques_btns_selector"
+        android:text="Surah Waqiah"
+        android:layout_marginTop="15dp"
+        android:textColor="#e6cb7e"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_surah_yaseen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_surah_waqia"
+        android:layout_below="@+id/btn_surah_waqia"
+        android:background="@drawable/ques_btns_selector"
+        android:text="Surah Yaseen"
+        android:textColor="#e6cb7e"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_s"
+    android:orientation="vertical" >
+
+<!--     <include layout="@layout/layout_header" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#006699"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/edittext_search_loation"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/testarea_bg_custom"
+            android:drawableLeft="@drawable/search_icon"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true">
+        </EditText>
+        
+         <Button
+            android:id="@+id/btn_search_location"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="Search"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_btn_selector"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_locations"
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:layout_weight="0.55" >
+    </ListView>
+    
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

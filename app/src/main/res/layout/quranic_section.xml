@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_s"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/layout_header" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="50dp" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:layout_weight="0.55"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_learn_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ques_btns_selector"
+            android:text="Quran Words"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_quran_quz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ques_btns_selector"
+            android:text="Quran Quiz Activity"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold" />
+        
+        
+        <Button
+            android:id="@+id/btn_view_quran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ques_btns_selector"
+            android:text="Read Quran"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/btn_listen_quran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ques_btns_selector"
+            android:text="Surahs Recitaion"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_s"
+    android:orientation="vertical" >
+
+<!--     <include -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="50dp" -->
+<!--         layout="@layout/layout_header" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:layout_weight="0.55"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/hijri_date"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edittext_hijri_year"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_edit"
+                android:hint="@string/year"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="3dp" />
+
+            <EditText
+                android:id="@+id/edittext_hijri_month"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_edit"
+                android:hint="@string/month"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="3dp" />
+
+            <EditText
+                android:id="@+id/edittext_hijri_day"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_edit"
+                android:hint="@string/day"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="3dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/gregorian_date"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edittext_gregorian_year"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_edit"
+                android:hint="@string/year"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="3dp" />
+
+            <EditText
+                android:id="@+id/edittext_gregorian_month"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_edit"
+                android:hint="@string/month"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="3dp" />
+
+            <EditText
+                android:id="@+id/edittext_gregorian_day"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_edit"
+                android:hint="@string/day"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="3dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_hijri_to_greg"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ques_btns_selector"
+            android:text="@string/hijri_to_gregorian"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_gregorian_to_hijri"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ques_btns_selector"
+            android:text="@string/gregoria_to_hijri"
+            android:textColor="#e6cb7e"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

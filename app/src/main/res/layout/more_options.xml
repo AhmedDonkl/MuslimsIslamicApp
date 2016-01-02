@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_backgrounds"
+    android:orientation="vertical" >
+
+<!--     <include layout="@layout/layout_header" /> -->
+
+    <LinearLayout
+        android:id="@+id/layout_qibla_direction"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#99333333"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/qiblabg_white" 
+            android:scaleType="fitCenter"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/qibla_direction"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#99333333"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/settingsbg_white" 
+            android:scaleType="fitCenter"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/settings"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#99333333"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/aboutbg_white" 
+            android:scaleType="fitCenter"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/about"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+</LinearLayout>
